@@ -24,20 +24,11 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 
 module.exports = {
   solidity: "0.8.4",
-/*
+
   networks: {
-    "local-devnode": {
-       url: "http://localhost:8545",
-       accounts: { mnemonic: "test test test test test test test test test test test junk" }
+    'optimism-goerli': {
+      url: process.env.URL,
+      accounts: { mnemonic: process.env.MNEMONIC }
     },
-    "optimistic-kovan": {
-       url: "https://kovan.optimism.io",
-       accounts: { mnemonic: process.env.MNEMONIC }
-    },
-    "optimism": {
-       url: "https://mainnet.optimism.io",
-       accounts: { mnemonic: process.env.MNEMONIC }
-    }
   }
-*/
 };
