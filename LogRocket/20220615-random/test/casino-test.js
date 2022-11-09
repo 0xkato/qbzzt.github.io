@@ -24,6 +24,7 @@ describe("Casino", async () => {
 
     try {
       tx = await c.proposeBet(hashA)
+
       rcpt = await tx.wait()
 
       // If we get here, it's a fail
